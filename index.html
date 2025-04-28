@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insader Programmer</title>
+  <link rel="stylesheet" href="portilio.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Captura de tela 2025-04-27 221430.png" alt="Logo">
+    </div>
+    <div class="menu-icons" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <div class="sidebar" id="sidebar">
+    <a href="#sobremim">Sobre mim</a>
+    <a href="#projetos">Sites de Clientes</a>
+    <a href="#contato">Contato</a>
+  </div>
+  <header class="header">
+    <div class="header-content">
+      <p>Insader Programmer</p>
+      <h1>faça o seu projeto comigo.</h1>
+    </div>
+  </header>
+  <section class="sobremim" id="sobremim">
+    <div class="sobremim-container">
+      <div class="sobremim-texto">
+        <h1>Sobre Mim</h1>
+        <p>O InsaderProgramer é um negócio de programação especializado na criação de sites personalizados, adaptados ao orçamento de cada cliente.<br><br>
+          Sou um jovem programador, uso as linguagens: HTML, CSS e JavaScript.<br><br>
+          Uso o notebook Book2 Samsung.
+        </p>
+      </div>
+      <div class="sobremim-imagem">
+        <img src="back2.jpg" alt="Notebook">
+      </div>
+    </div>
+  </section>
+  <section class="projetos" id="projetos">
+    <div class="projetos-container">
+      <div class="projeto-card">
+        <h2><a href="https://williamffdl.github.io/sos_oculos/" target="_blank">SOS Óculos</a></h2>
+        <p>Site para ótica especializado em reparos de óculos.</p>
+      </div>
+      <div class="projeto-card">
+        <h2><a href="https://williamffdl.github.io/BrisaGlase/" target="_blank">Brisa Glase</a></h2>
+        <p>Site de confeitaria artesanal (em andamento).</p>
+      </div>
+      <div class="projeto-card">
+        <h2><a href="https://williamffdl.github.io/pkphphotos/" target="_blank">PKPH Photos</a></h2>
+        <p>Portfólio fotográfico profissional.</p>
+      </div>
+      <div class="projeto-card">
+        <h2><a href="https://williamffdl.github.io/jovemapaixonado/" target="_blank">Jovem Apaixonado</a></h2>
+        <p>Landing page para projeto musical.</p>
+      </div>
+    </div>
+  </section>  
+  <section class="contato" id="contato">
+    <div class="contato-container">
+      <h1>InsaderProgramer</h1>
+      <div class="contato-informacoes">
+        <div class="instagram">
+          <p><strong>INSTAGRAM:</strong></p>
+          <p>
+            <a href="https://instagram.com/insaderprogramer" target="_blank">@insaderprogramer</a>
+          </p>
+          <div class="whatsapp">
+            <p><strong>WHATSAPP:</strong></p>
+            <p>55 (86) 95421485</p>
+          </div>
+        </div>
+        <div class="mensagem">
+          <p><em>Entre em conosco no direct
+           <br> faça seu orçamento.
+          </em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <a href="https://wa.me/558695421485" class="contato-botton">entre em contato comigo.</a>
+  <script>
+    function toggleMenu() {
+      var sidebar = document.getElementById("sidebar");
+      if (sidebar.classList.contains('active')) {
+        sidebar.classList.remove('active');
+      } else {
+        sidebar.classList.add('active');
+      }
+    }
+  </script>
+  <script>
+    function toggleMenu() {
+      var sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle('active');
+    }
+    var links = document.querySelectorAll('.sidebar a');
+    links.forEach(function(link) {
+      link.addEventListener('click', function() {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

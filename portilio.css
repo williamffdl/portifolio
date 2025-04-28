@@ -1,0 +1,215 @@
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+  }
+  .navbar {
+    background-image: linear-gradient(to right, #00173d, #001741);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1001;
+  }
+  .logo img {
+    width: 60px;
+    height: auto;
+    border-radius: 50px;
+  }
+  .menu-icons {
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+  .sidebar.active {
+    left: 0; 
+  }
+  .sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: rgb(135, 135, 135);
+    font-size: 18px;
+  }
+  .sidebar a:hover {
+    background-color: #ffffff;
+  }
+  header.header {
+    background-image: url('back1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .header-content {
+    text-align: left;
+    color: white;
+    background-color: rgba(0, 23, 61, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .header-content p {
+    font-size: 1.5rem;
+    margin: 0;
+    font-style: italic;
+  }
+  .header-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 10px 0 0;
+  }
+   .contato-botton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1a3dab;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  .contato-botton::before {
+    content: '💬';
+    margin-right: 8px;
+  }
+  .sobremim-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: black;
+    color: white;
+  }
+  .sobremim-texto {
+    flex: 1;
+    padding-right: 30px;
+  }
+  .sobremim-texto h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .sobremim-texto p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  .sobremim-imagem {
+    flex: 1;
+    text-align: center;
+  }
+  .sobremim-imagem img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .contato {
+    background-color: #000;
+    color: white;
+    padding: 50px 20px;
+  }
+  .contato-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contato-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  .contato-informacoes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 30px 0;
+  }
+  .instagram p,
+  .mensagem p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  .instagram a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  .instagram a:hover {
+    text-decoration: underline;
+  }    
+ 
+  .projetos {
+    background-color: #000; /* fundo preto */
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  
+  .projeto-card {
+    background: rgba(0, 23, 61, 0.8);
+    border: 1px solid #00d9ff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .projeto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+  }
+
+  .projeto-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+
+  .projeto-card p {
+    font-size: 1rem;
+    color: #c0e8ff;
+  }
+
+  .projeto-card a {
+    color: #00d9ff;
+    text-decoration: none;
+  }
+
+  .projeto-card a:hover {
+    text-decoration: underline;
+  }
+  
